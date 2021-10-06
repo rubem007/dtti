@@ -8,19 +8,20 @@
 	<title>DTTI - Home</title>
 </head>
 <body>
+
 	<header>
 		<img src="img/pnalogo.jpeg" alt="DTTI" width="5%">
 		<nav>
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Quem Somos</a></li>
-			<li><a href="#">Organograma</a></li>
-			<li><a href="#">Contactos</a></li>
-			<li><a href="#">Actividades</a></li>
+			<li><a href="#section_about_us">Quem Somos</a></li>
+			<li><a href="#first_section_chart">Organograma</a></li>
+			<li><a href="#group_section_contact">Contactos</a></li>
+			<li><a href="#group_section_activity">Actividades</a></li>
 		</nav>
 	</header>
 	<section class="section_featured_image"></section>
 	
-	<section class="section_title">
+	<section class="section_title" id="section_about_us">
 		<article>Quem Somos</article>
 	</section>
 
@@ -56,7 +57,7 @@
 			
 		</article>
 	</section>
-	<section class="section_title">
+	<section class="section_title" id="first_section_chart">
 		<article>Organograma</article>
 	</section>
 
@@ -92,7 +93,7 @@
 			</article>
 		</section>
 	</section>
-	<section class="section_title">
+	<section class="section_title" id="group_section_contact">
 		<article>Contactos</article>
 	</section>
 	<section class="group_section_contact">
@@ -114,7 +115,7 @@
 			</article>
 	</section>
 
-	<section class="section_title">
+	<section class="section_title" id="group_section_activity">
 		<article>Actividades</article>
 	</section>
 	<section class="group_section_activity">
@@ -140,5 +141,31 @@
 	<footer>
 		<p>Copyright ©2021 All rights reserved | Site criado pela Zelana-Corporation</p>
 	</footer>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+	<!-- JS -->
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
 </body>
 </html>
