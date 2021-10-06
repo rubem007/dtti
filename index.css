@@ -1,0 +1,200 @@
+/* RESET */
+* {
+	margin: 0; padding: 0; font-size: 100%; box-sizing: border-box; font-family: sans-serif;
+}
+nav, ul { list-style: none; }
+
+a { text-decoration: none; cursor: pointer; opacity: 0.9; color: black; }
+
+body { max-width: 100%; }
+
+/************************************** Menu **************************************/
+header 
+{
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 50px;
+}
+
+header nav { display: flex; }
+header li { margin: 0 15px; }
+header li a { color: #191c03; }
+
+/************************************** Imagem de Destaque **************************************/
+section.section_featured_image {
+	background-image: url('img/destaque.jpg');
+	background-size: cover;
+	height: 90vh;
+}
+
+/************************************** Título **************************************/
+
+section.section_title {
+	margin-top: 3px;
+	background-color: #013588;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	
+}
+
+section.section_title article {
+	font-size: 1.5000em;
+	font-weight: 700;
+	color: white;
+}
+
+/************************************** Quem Somos **************************************/
+
+section.section_about_us {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 100px;
+}
+
+section.section_about_us article:last-child {
+	padding-left: 50px;
+	text-align: justify;
+}
+
+/************************************** Organograma **************************************/
+section.first_section_chart { background-color: rgba(204, 204, 204, 0.11); }
+
+section.section_chart {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section.section_chart > img {
+	width: 100px;
+	border-radius: 100%;
+}
+
+section.group_section_chart {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.group_section_chart article {
+	padding: 20px 5px;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section.group_section_chart article img {
+	width: 100px;
+}
+
+/************************************** Contactos **************************************/
+section.group_section_contact {
+	display: flex;
+	justify-content: center;
+}
+
+span {
+	/*border: thin solid yellow;*/
+	width: 120px;
+	height: 120px; 
+	background-color: white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	border-radius: 100%;
+	font-size: 1.5000em;
+	
+	text-align: center;
+	color: #013588;
+	margin-bottom: 10px;
+}
+
+section.group_section_contact article {
+	/*border: thin solid blue;*/
+	background-color: rgba(204, 204, 204, 0.11);
+	padding: 20px 5px;
+	width: 25%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 15px;
+}
+
+/************************************** Actividades **************************************/
+section.group_section_activity {
+	/*border: thin solid red;*/
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+section.group_section_activity article {
+	/*border: thin solid blue;*/
+	padding: 20px 25px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+section.group_section_activity article img {
+	width: 250px;
+	height: 250px;
+}
+
+section.group_section_activity article p.p_data {
+	color: #013588;
+
+}
+
+.div_title {
+	width: 250px;
+	
+}
+
+.div_title a:hover {
+	color: #013588;
+}
+
+/************************************** Footer **************************************/
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	background-color: #013588;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************** Mobile **************************************/
+@media (max-width: 700px) 
+{
+	header 
+	{ 
+		flex-direction: column; 
+		padding: 15px 20px;
+	}
+
+	header nav { margin-top: 10px; flex-direction: column }
+}
